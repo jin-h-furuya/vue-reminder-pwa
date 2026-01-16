@@ -1,4 +1,12 @@
 <template>
+  <div class="container">
+    <h2>通知の設定</h2>
+    <p>リマインダーを受け取るには通知を許可してください。</p>
+    <button @click="requestPermission" class="btn">
+      通知を許可する
+    </button>
+  </div>
+
   <div class="form-container">
     <h3>新規リマインダー</h3>
     <input v-model="form.content" type="text" placeholder="何をする？" />
@@ -91,6 +99,5 @@ const deleteReminder = (id) => {
 
 onMounted(() => {
   loadData();
-  requestPermission();
 });
 </script>
