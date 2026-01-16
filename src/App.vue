@@ -40,9 +40,9 @@ const checkReminders = () => {
 };
 
 const showNotification = (item) => {
-  alert('通知: ' + item.content);
+  // alert('通知: ' + item.content);
   if (Notification.permission === 'granted') {
-    alert('通知を表示します');
+    // alert('通知を表示します');
     const n = new Notification('リマインダー', {
       body: item.content,
       data: { id: item.id }
