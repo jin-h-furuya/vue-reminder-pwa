@@ -5,8 +5,8 @@ import ReminderDetail from './views/ReminderDetail.vue'
 
 // ルート定義
 const routes = [
-  { path: '/', component: () => import('./components/ReminderForm.vue') },
-  { path: '/reminder/:id', component: ReminderDetail, props: true }
+  { path: import.meta.env.BASE_URL, component: () => import('./components/ReminderForm.vue') },
+  { path: import.meta.env.BASE_URL + 'reminder/:id', component: ReminderDetail, props: true }
 ]
 
 const router = createRouter({
