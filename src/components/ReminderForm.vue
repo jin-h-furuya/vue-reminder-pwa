@@ -56,7 +56,7 @@ const requestPermission = async () => {
     // Service Worker経由でテスト通知を出す
     registration.showNotification("テスト通知", {
       body: "通知が届くようになりました",
-      icon: "/icon.png"
+      icon: "icon.png"
     });
   } else {
     alert("拒否されました: " + permission);

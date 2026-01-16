@@ -51,7 +51,7 @@ const showNotification = (item) => {
     n.onclick = (e) => {
       window.focus();
       // 通知をクリックしたら詳細ページへ移動
-      router.push(`/reminder/${item.id}`);
+      router.push(`reminder/${item.id}`);
     };
   }
 };
