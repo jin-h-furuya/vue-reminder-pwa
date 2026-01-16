@@ -1,7 +1,7 @@
 {
   "name": "Quick Reminder",
   "short_name": "Reminder",
-  "start_url": "/",
+  "start_url": "/vue-reminder-pwa/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#42b883",
