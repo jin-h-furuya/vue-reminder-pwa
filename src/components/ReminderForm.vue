@@ -50,9 +50,9 @@ const requestPermission = async () => {
 
   // 3. 許可を求める（Promiseとコールバック両対応）
   const permission = await Notification.requestPermission();
+  alert("permission: " + permission);
   
   if (permission === 'granted') {
-    alert("通知が許可されました！");
     // Service Worker経由でテスト通知を出す
     registration.showNotification("テスト通知", {
       body: "通知が届くようになりました",
